@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/wireshark.png</file>
+        <file>img/nmap.png</file>
+        <file>img/nmap/1.PNG</file>
+        <file>img/nmap/2.PNG</file>
+        <file>img/nmap/3.PNG</file>
+        <file>img/tshark/1.PNG</file>
+        <file>img/tshark/2.PNG</file>
+        <file>img/tshark/3.PNG</file>
+        <file>img/tshark/4.PNG</file>
+        <file>img/tshark/5.PNG</file>
+        <file>img/tshark/6.PNG</file>
+        <file>img/tshark/7.PNG</file>
+        <file>img/ajax_loader.gif</file>
+    </qresource>
+    <qresource prefix="/text">
+        <file>text/nmap/1.txt</file>
+        <file>text/nmap/2.txt</file>
+        <file>text/nmap/3.txt</file>
+        <file>text/nmap/4.txt</file>
+        <file>text/tshark/1.txt</file>
+        <file>text/tshark/2.txt</file>
+        <file>text/tshark/3.txt</file>
+        <file>text/tshark/4.txt</file>
+        <file>text/tshark/5.txt</file>
+        <file>text/tshark/6.txt</file>
+        <file>text/tshark/7.txt</file>
+        <file>text/tshark/8.txt</file>
+        <file>text/scan.txt</file>
+    </qresource>
+</RCC>

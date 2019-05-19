@@ -1,0 +1,1 @@
+On this screen make sure that Associate File Extentions is checked off. After it is press Next.

@@ -1,0 +1,1 @@
+You should find the installer for nmap along with where you downloaded this application. When you see this screen press I agree."

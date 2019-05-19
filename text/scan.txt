@@ -1,0 +1,1026 @@
+Nmap scan report for routerlogin.net (192.168.0.1)
+
+WARNING: RST from 192.168.0.53 port 9100 -- is this port really open?
+
+Host is up (0.0047s latency).
+
+Not shown: 996 closed ports
+
+PORT     STATE SERVICE     VERSION
+
+53/tcp   open  domain      dnsmasq 2.57-OpenDNS-1
+
+80/tcp   open  http        lighttpd
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-server-header: lighttpd
+
+| http-slowloris-check: 
+
+|   VULNERABLE:
+
+|   Slowloris DOS attack
+
+|     State: LIKELY VULNERABLE
+
+|     IDs:  CVE:CVE-2007-6750
+
+|       Slowloris tries to keep many connections to the target web server open and hold
+
+|       them open as long as possible.  It accomplishes this by opening connections to
+
+|       the target web server and sending a partial request. By doing so, it starves
+
+|       the http server's resources causing Denial Of Service.
+
+|       
+
+|     Disclosure date: 2009-09-17
+
+|     References:
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+
+|_      http://ha.ckers.org/slowloris/
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+5000/tcp open  upnp        MiniUPnP 1.5 (Linux 2.6.18_pro500; UPnP 1.0)
+
+MAC Address: A0:63:91:58:F8:02 (Netgear)
+
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+
+TCP/IP fingerprint:
+
+OS:SCAN(V=7.70%E=4%D=5/12%OT=53%CT=1%CU=40444%PV=Y%DS=1%DC=D%G=Y%M=A06391%T
+
+OS:M=5CD879F7%P=i686-pc-windows-windows)SEQ(SP=C5%GCD=1%ISR=CA%TI=Z%CI=Z%II
+
+OS:=I%TS=7)SEQ(CI=Z%II=I)OPS(O1=M5B4ST11NW2%O2=M5B4ST11NW2%O3=M5B4NNT11NW2%
+
+OS:O4=M5B4ST11NW2%O5=M5B4ST11NW2%O6=M5B4ST11)WIN(W1=3890%W2=3890%W3=3890%W4
+
+OS:=3890%W5=3890%W6=3890)ECN(R=Y%DF=Y%T=40%W=3908%O=M5B4NNSNW2%CC=N%Q=)T1(R
+
+OS:=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=3890%S=O%A=
+
+OS:S+%F=AS%O=M5B4ST11NW2%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+
+OS:=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A
+
+OS:%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y
+
+OS:%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T
+
+OS:=40%CD=S)
+
+
+
+Network Distance: 1 hop
+
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel:2.6.18
+
+
+
+Host script results:
+
+|_smb-vuln-ms10-054: false
+
+|_smb-vuln-ms10-061: NT_STATUS_OBJECT_NAME_NOT_FOUND
+
+| smb-vuln-regsvc-dos: 
+
+|   VULNERABLE:
+
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+
+|     State: VULNERABLE
+
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+
+|       while working on smb-enum-sessions.
+
+|_          
+
+
+
+TRACEROUTE
+
+HOP RTT     ADDRESS
+
+1   4.66 ms routerlogin.net (192.168.0.1)
+
+
+
+Nmap scan report for 192.168.0.21
+
+Host is up (0.017s latency).
+
+Not shown: 988 closed ports
+
+PORT      STATE    SERVICE        VERSION
+
+700/tcp   filtered epp
+
+800/tcp   filtered mdbs_daemon
+
+1073/tcp  filtered bridgecontrol
+
+1104/tcp  filtered xrl
+
+1117/tcp  filtered ardus-mtrns
+
+1151/tcp  filtered unizensus
+
+1174/tcp  filtered fnet-remote-ui
+
+4550/tcp  filtered gds-adppiw-db
+
+5922/tcp  filtered unknown
+
+6567/tcp  filtered esp
+
+8084/tcp  filtered unknown
+
+16012/tcp filtered unknown
+
+MAC Address: A4:08:EA:8B:EF:7A (Murata Manufacturing)
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   17.27 ms 192.168.0.21
+
+
+
+Nmap scan report for 192.168.0.24
+
+Host is up (0.037s latency).
+
+All 1000 scanned ports on 192.168.0.24 are closed
+
+MAC Address: 18:74:2E:40:E1:01 (Amazon Technologies)
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   36.74 ms 192.168.0.24
+
+
+
+Nmap scan report for 192.168.0.26
+
+Host is up (0.32s latency).
+
+All 1000 scanned ports on 192.168.0.26 are closed
+
+MAC Address: 30:07:4D:C7:71:8B (Samsung Electro-mechanics(thailand))
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT       ADDRESS
+
+1   318.23 ms 192.168.0.26
+
+
+
+Nmap scan report for 192.168.0.27
+
+Host is up (0.049s latency).
+
+Not shown: 878 closed ports, 121 filtered ports
+
+PORT      STATE SERVICE    VERSION
+
+62078/tcp open  tcpwrapped
+
+MAC Address: DC:0C:5C:A4:C2:04 (Apple)
+
+Device type: firewall
+
+Running (JUST GUESSING): Fortinet embedded (87%)
+
+OS CPE: cpe:/h:fortinet:fortigate_100d
+
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   48.94 ms 192.168.0.27
+
+
+
+Nmap scan report for 192.168.0.34
+
+Host is up (0.0062s latency).
+
+Not shown: 997 closed ports
+
+PORT     STATE SERVICE         VERSION
+
+8008/tcp open  http?
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+8009/tcp open  ssl/castv2      Ninja Sphere Chromecast driver
+
+|_sslv2-drown: 
+
+9000/tcp open  ssl/cslistener?
+
+|_sslv2-drown: 
+
+MAC Address: 6C:AD:F8:93:AC:44 (AzureWave Technology)
+
+Device type: general purpose
+
+Running: Linux 2.6.X|3.X
+
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+
+OS details: Linux 2.6.32 - 3.10
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT     ADDRESS
+
+1   6.23 ms 192.168.0.34
+
+
+
+Nmap scan report for 192.168.0.43
+
+Host is up (0.0059s latency).
+
+Not shown: 977 filtered ports
+
+PORT      STATE  SERVICE        VERSION
+
+43/tcp    closed whois
+
+125/tcp   closed locus-map
+
+593/tcp   closed http-rpc-epmap
+
+990/tcp   closed ftps
+
+1030/tcp  closed iad1
+
+1081/tcp  closed pvuniwien
+
+2048/tcp  closed dls-monitor
+
+2604/tcp  closed ospfd
+
+3071/tcp  closed csd-mgmt-port
+
+3283/tcp  closed netassistant
+
+5500/tcp  closed hotline
+
+5901/tcp  closed vnc-1
+
+6792/tcp  closed unknown
+
+7004/tcp  closed afs3-kaserver
+
+8042/tcp  closed fs-agent
+
+8045/tcp  closed unknown
+
+8086/tcp  closed d-s-n
+
+8181/tcp  closed intermapper
+
+9618/tcp  closed condor
+
+9944/tcp  closed unknown
+
+10024/tcp closed unknown
+
+49152/tcp closed unknown
+
+50001/tcp closed unknown
+
+MAC Address: 98:B6:E9:46:68:BD (Nintendo)
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT     ADDRESS
+
+1   5.88 ms 192.168.0.43
+
+
+
+Nmap scan report for 192.168.0.45
+
+Host is up (0.0075s latency).
+
+All 1000 scanned ports on 192.168.0.45 are closed
+
+MAC Address: F0:81:73:87:34:8B (Unknown)
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT     ADDRESS
+
+1   7.53 ms 192.168.0.45
+
+
+
+Nmap scan report for 192.168.0.46
+
+Host is up (0.012s latency).
+
+Not shown: 999 filtered ports
+
+PORT     STATE SERVICE VERSION
+
+9999/tcp open  abyss?
+
+MAC Address: 50:C7:BF:74:C2:CE (Tp-link Technologies)
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Device type: media device
+
+Running (JUST GUESSING): Roku embedded (86%)
+
+OS CPE: cpe:/h:roku:soundbridge_m1001
+
+Aggressive OS guesses: Roku SoundBridge M1001 music player (86%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   12.43 ms 192.168.0.46
+
+
+
+Nmap scan report for 192.168.0.47
+
+Host is up (0.015s latency).
+
+Not shown: 999 filtered ports
+
+PORT     STATE SERVICE VERSION
+
+9999/tcp open  abyss?
+
+MAC Address: 50:C7:BF:99:13:BF (Tp-link Technologies)
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Device type: media device
+
+Running (JUST GUESSING): Roku embedded (86%)
+
+OS CPE: cpe:/h:roku:soundbridge_m1001
+
+Aggressive OS guesses: Roku SoundBridge M1001 music player (86%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   14.84 ms 192.168.0.47
+
+
+
+Nmap scan report for 192.168.0.48
+
+Host is up (0.014s latency).
+
+Not shown: 999 filtered ports
+
+PORT     STATE SERVICE VERSION
+
+9999/tcp open  abyss?
+
+MAC Address: 50:C7:BF:7B:D8:23 (Tp-link Technologies)
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Device type: media device
+
+Running (JUST GUESSING): Roku embedded (86%)
+
+OS CPE: cpe:/h:roku:soundbridge_m1001
+
+Aggressive OS guesses: Roku SoundBridge M1001 music player (86%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   13.74 ms 192.168.0.48
+
+
+
+Nmap scan report for 192.168.0.49
+
+Host is up (0.018s latency).
+
+All 1000 scanned ports on 192.168.0.49 are closed
+
+MAC Address: 34:EA:34:43:34:9A (HangZhou Gubei Electronics Technology)
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+
+Device type: specialized
+
+Running: IHome embedded, iRobot embedded
+
+OS CPE: cpe:/h:ihome:isp5wwc cpe:/h:irobot:roomba_980
+
+OS details: IHome SmartPlug iSP5WWC, iRobot Roomba 980 vacuum cleaner
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   18.12 ms 192.168.0.49
+
+
+
+Nmap scan report for 192.168.0.50
+
+Host is up (0.016s latency).
+
+Not shown: 999 closed ports
+
+PORT     STATE SERVICE VERSION
+
+8009/tcp open  http    Amazon Whisperplay DIAL REST service
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+MAC Address: 00:71:47:F5:3C:62 (Unknown)
+
+Device type: phone
+
+Running: Google Android 4.X|5.X|6.X, Linux 3.X
+
+OS CPE: cpe:/o:google:android:4 cpe:/o:google:android:5 cpe:/o:google:android:6 cpe:/o:linux:linux_kernel:3
+
+OS details: Android 4.1 - 6.0 (Linux 3.4 - 3.14)
+
+Network Distance: 1 hop
+
+Service Info: Device: media device
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   15.81 ms 192.168.0.50
+
+
+
+Nmap scan report for 192.168.0.53
+
+Host is up (0.029s latency).
+
+Not shown: 993 closed ports
+
+PORT     STATE SERVICE    VERSION
+
+80/tcp   open  tcpwrapped
+
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+| http-enum: 
+
+|   /robots.txt: Robots file
+
+|_  /images/printer.gif: Lexmark Printer
+
+|_http-server-header: HP HTTP Server; HP HP OfficeJet Pro 8720 - M9L75A; Serial Number: CN7C8C6293; Built:Tue Mar 05, 2019 02:54:18PM {WMP1CN1910AR}
+
+| http-slowloris-check: 
+
+|   VULNERABLE:
+
+|   Slowloris DOS attack
+
+|     State: LIKELY VULNERABLE
+
+|     IDs:  CVE:CVE-2007-6750
+
+|       Slowloris tries to keep many connections to the target web server open and hold
+
+|       them open as long as possible.  It accomplishes this by opening connections to
+
+|       the target web server and sending a partial request. By doing so, it starves
+
+|       the http server's resources causing Denial Of Service.
+
+|       
+
+|     Disclosure date: 2009-09-17
+
+|     References:
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+
+|_      http://ha.ckers.org/slowloris/
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+443/tcp  open  tcpwrapped
+
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+| http-enum: 
+
+|   /robots.txt: Robots file
+
+|   /images/printer.gif: Lexmark Printer
+
+|_  /chatlog.nsf: Lotus Domino (401 Unauthorized)
+
+|_http-server-header: HP HTTP Server; HP HP OfficeJet Pro 8720 - M9L75A; Serial Number: CN7C8C6293; Built:Tue Mar 05, 2019 02:54:18PM {WMP1CN1910AR}
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+|_sslv2-drown: 
+
+515/tcp  open  tcpwrapped
+
+631/tcp  open  tcpwrapped
+
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+| http-enum: 
+
+|   /robots.txt: Robots file
+
+|_  /images/printer.gif: Lexmark Printer
+
+|_http-server-header: HP HTTP Server; HP HP OfficeJet Pro 8720 - M9L75A; Serial Number: CN7C8C6293; Built:Tue Mar 05, 2019 02:54:18PM {WMP1CN1910AR}
+
+8080/tcp open  tcpwrapped
+
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+| http-enum: 
+
+|   /robots.txt: Robots file
+
+|_  /images/printer.gif: Lexmark Printer
+
+|_http-server-header: HP HTTP Server; HP HP OfficeJet Pro 8720 - M9L75A; Serial Number: CN7C8C6293; Built:Tue Mar 05, 2019 02:54:18PM {WMP1CN1910AR}
+
+9100/tcp open  jetdirect?
+
+9220/tcp open  hp-gsg     HP Generic Scan Gateway 1.0
+
+MAC Address: AC:E2:D3:BD:69:61 (Unknown)
+
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+
+TCP/IP fingerprint:
+
+OS:SCAN(V=7.70%E=4%D=5/12%OT=9100%CT=1%CU=35462%PV=Y%DS=1%DC=D%G=Y%M=ACE2D3
+
+OS:%TM=5CD879F7%P=i686-pc-windows-windows)SEQ(SP=103%GCD=1%ISR=10D%TI=RD%II
+
+OS:=I%TS=A)SEQ(SP=109%GCD=1%ISR=10C%TI=RI%CI=I%II=I%TS=A)SEQ(SP=107%GCD=1%I
+
+OS:SR=102%TI=RD%CI=RI%TS=B)SEQ(SP=100%GCD=1%ISR=10B%TI=RI%TS=A)OPS(O1=M5B4N
+
+OS:W0NNSNNT11%O2=M578NW0NNSNNT11%O3=M280NW0NNT11%O4=M5B4NW0NNSNNT11%O5=M218
+
+OS:NW0NNSNNT11%O6=M109NNSNNT11)WIN(W1=43E0%W2=4110%W3=423C%W4=43E0%W5=4180%
+
+OS:W6=403D)ECN(R=Y%DF=N%T=40%W=4470%O=M5B4NW0NNS%CC=N%Q=)T1(R=Y%DF=N%T=40%S
+
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=N%T=40%W=0%S=A%A=Z%F=R%O=%R
+
+OS:D=0%Q=)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T=40%W=
+
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U
+
+OS:1(R=Y%DF=N%T=FF%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI
+
+OS:=N%T=FF%CD=S)
+
+
+
+Network Distance: 1 hop
+
+Service Info: Device: printer
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   29.44 ms 192.168.0.53
+
+
+
+Nmap scan report for 192.168.0.63
+
+Host is up (0.030s latency).
+
+All 1000 scanned ports on 192.168.0.63 are closed
+
+MAC Address: 3C:28:6D:01:D4:3D (Unknown)
+
+Too many fingerprints match this host to give specific OS details
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   29.60 ms 192.168.0.63
+
+
+
+Nmap scan report for 192.168.0.68
+
+Host is up (0.050s latency).
+
+Not shown: 917 closed ports, 82 filtered ports
+
+PORT      STATE SERVICE    VERSION
+
+62078/tcp open  tcpwrapped
+
+MAC Address: F0:DB:F8:4D:D2:EA (Apple)
+
+Device type: firewall
+
+Running (JUST GUESSING): Fortinet embedded (87%)
+
+OS CPE: cpe:/h:fortinet:fortigate_100d
+
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+
+No exact OS matches for host (test conditions non-ideal).
+
+Network Distance: 1 hop
+
+
+
+TRACEROUTE
+
+HOP RTT      ADDRESS
+
+1   49.51 ms 192.168.0.68
+
+
+
+Nmap scan report for readyshare.routerlogin.net (192.168.0.254)
+
+Host is up (0.0039s latency).
+
+Not shown: 994 closed ports
+
+PORT      STATE SERVICE     VERSION
+
+80/tcp    open  http        Neato Botvac Connected
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+514/tcp   open  shell?
+
+| fingerprint-strings: 
+
+|   FourOhFourRequest, Help, LPDString, NCP, NULL, NotesRPC, SIPOptions, WMSRequest, ms-sql-s: 
+
+|_    Connection
+
+8200/tcp  open  upnp        ReadyDLNA 1.1.0 (DLNADOC 1.50; UPnP 1.0)
+
+49152/tcp open  upnp        Cisco-Linksys E4200 WAP upnpd (UPnP 1.0)
+
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+
+SF-Port514-TCP:V=7.70%I=7%D=5/12%Time=5CD87792%P=i686-pc-windows-windows%r
+
+SF:(NULL,B,"Connection\n")%r(Help,B,"Connection\n")%r(FourOhFourRequest,B,
+
+SF:"Connection\n")%r(LPDString,B,"Connection\n")%r(SIPOptions,B,"Connectio
+
+SF:n\n")%r(NCP,B,"Connection\n")%r(NotesRPC,B,"Connection\n")%r(WMSRequest
+
+SF:,B,"Connection\n")%r(ms-sql-s,B,"Connection\n");
+
+MAC Address: 28:C6:8E:00:00:01 (Netgear)
+
+Device type: general purpose
+
+Running: Linux 2.6.X|3.X
+
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+
+OS details: Linux 2.6.38 - 3.0
+
+Network Distance: 1 hop
+
+Service Info: OS: Linux 2.6; Device: specialized; CPE: cpe:/o:linux:linux_kernel:2.6, cpe:/h:cisco:e4200
+
+
+
+Host script results:
+
+|_smb-vuln-ms10-054: false
+
+|_smb-vuln-ms10-061: NT_STATUS_OBJECT_NAME_NOT_FOUND
+
+| smb-vuln-regsvc-dos: 
+
+|   VULNERABLE:
+
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+
+|     State: VULNERABLE
+
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+
+|       while working on smb-enum-sessions.
+
+|_          
+
+
+
+TRACEROUTE
+
+HOP RTT     ADDRESS
+
+1   3.87 ms readyshare.routerlogin.net (192.168.0.254)
+
+
+
+Nmap scan report for 192.168.0.20
+
+Host is up (0.00s latency).
+
+Not shown: 992 closed ports
+
+PORT     STATE SERVICE         VERSION
+
+135/tcp  open  msrpc           Microsoft Windows RPC
+
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+
+445/tcp  open  microsoft-ds    Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+|_sslv2-drown: 
+
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+
+3580/tcp open  http            National Instruments LabVIEW service locator httpd 1.0.0
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+| http-enum: 
+
+|   /login.html: Possible admin folder
+
+|_  /clientaccesspolicy.xml: Microsoft Silverlight crossdomain policy
+
+|_http-server-header: NI Service Locator/1.0.0 (SLServer)
+
+| http-slowloris-check: 
+
+|   VULNERABLE:
+
+|   Slowloris DOS attack
+
+|     State: LIKELY VULNERABLE
+
+|     IDs:  CVE:CVE-2007-6750
+
+|       Slowloris tries to keep many connections to the target web server open and hold
+
+|       them open as long as possible.  It accomplishes this by opening connections to
+
+|       the target web server and sending a partial request. By doing so, it starves
+
+|       the http server's resources causing Denial Of Service.
+
+|       
+
+|     Disclosure date: 2009-09-17
+
+|     References:
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+
+|_      http://ha.ckers.org/slowloris/
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-server-header: Microsoft-HTTPAPI/2.0
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+8080/tcp open  http            Embedthis HTTP lib httpd
+
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+|_http-server-header: Embedthis-http
+
+| http-slowloris-check: 
+
+|   VULNERABLE:
+
+|   Slowloris DOS attack
+
+|     State: LIKELY VULNERABLE
+
+|     IDs:  CVE:CVE-2007-6750
+
+|       Slowloris tries to keep many connections to the target web server open and hold
+
+|       them open as long as possible.  It accomplishes this by opening connections to
+
+|       the target web server and sending a partial request. By doing so, it starves
+
+|       the http server's resources causing Denial Of Service.
+
+|       
+
+|     Disclosure date: 2009-09-17
+
+|     References:
+
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+
+|_      http://ha.ckers.org/slowloris/
+
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+
+TCP/IP fingerprint:
+
+OS:SCAN(V=7.70%E=4%D=5/12%OT=135%CT=1%CU=33340%PV=Y%DS=0%DC=L%G=Y%TM=5CD87C
+
+OS:0F%P=i686-pc-windows-windows)SEQ(SP=101%GCD=1%ISR=10D%TI=I%CI=I%II=I%SS=
+
+OS:S%TS=U)OPS(O1=MFFD7NW8NNS%O2=MFFD7NW8NNS%O3=MFFD7NW8%O4=MFFD7NW8NNS%O5=M
+
+OS:FFD7NW8NNS%O6=MFFD7NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF
+
+OS:32)ECN(R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A
+
+OS:=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=
+
+OS:Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%R
+
+OS:D=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=
+
+OS:0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U
+
+OS:1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DF
+
+OS:I=N%T=80%CD=Z)
+
+
+
+Network Distance: 0 hops
+
+Service Info: Host: DESKTOP-BPP3VOJ; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
+
+Host script results:
+
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+
+|_smb-vuln-ms10-054: false
+
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+
+Nmap done: 255 IP addresses (18 hosts up) scanned in 1859.21 seconds
+

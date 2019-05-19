@@ -1,0 +1,1 @@
+Please make sure the destination folder matches the one in the above screenshot. Press Install to install and agree to install any supporting software it might ask you about while it installs.

@@ -1,0 +1,1 @@
+Make sure the destination folder is set to the same one as in the screenshot above. Press Next when ready.
